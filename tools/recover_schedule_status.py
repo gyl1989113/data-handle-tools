@@ -14,11 +14,11 @@ def recover_schedule_status(entity_code):
         db='ijep',
     )
     cursor = connect.cursor()
-    sql5 = f"delete FROM sch_job_details where JOB_NAME like '%{entity_code}%';"
-    sql2 = f"delete FROM sch_simple_triggers where TRIGGER_NAME in (SELECT TRIGGER_NAME FROM sch_triggers where JOB_NAME like '%{entity_code}%');"
-    sql3 = f"delete FROM sch_cron_triggers WHERE TRIGGER_NAME like '%{entity_code}%';"
-    sql4 = f"delete FROM sch_triggers WHERE job_name like '%{entity_code}%';"
-    sql1 = f"update sch_job_entity set STATUS_ = 'STOPPED' where CODE_ like '%{entity_code}%';"
+    sql5 = f"delete FROM xx where JOB_NAME like '%{entity_code}%';"
+    sql2 = f"delete FROM xx where TRIGGER_NAME in (SELECT TRIGGER_NAME FROM sch_triggers where JOB_NAME like '%{entity_code}%');"
+    sql3 = f"delete FROM xx WHERE TRIGGER_NAME like '%{entity_code}%';"
+    sql4 = f"delete FROM xx WHERE job_name like '%{entity_code}%';"
+    sql1 = f"update xx set STATUS_ = 'STOPPED' where CODE_ like '%{entity_code}%';"
     try:
         cursor.execute(sql5)
         cursor.execute(sql2)
