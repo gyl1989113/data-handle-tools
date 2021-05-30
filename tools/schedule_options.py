@@ -108,9 +108,9 @@ if __name__ == '__main__':
     option = 1
     # 环境
     # 测试环境：
-    # urlTitle = 'http://172.22.69.41:9001/'
+    # urlTitle = 'http://xxx/'
     # 生产环境：
-    urlTitle = 'http://onestopdata.pactera.com:9001/'
+    urlTitle = 'http://xxx/'
 
     # 从浏览器获取
     x_user_token = 'eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJQMDEzNDYxNSIsInN1YiI6ImxvZ2luLmxvZ2luIiwiaWF0IjoxNTYzMTU4NjI1LCJhdXRob3JpemF0aW9uIjp7fSwiZGVwdE5hbWUiOiJCRzJfQlVTT0xfU0lJX1Jpc2siLCJsb2dpblRpbWUiOiIyMDE5LTA3LTE1IDEwOjQzOjQ1IiwidW5pdE5hbWUiOiJCRzJfQlVTT0xfU0lJX1Jpc2siLCJ1bml0Q29kZSI6IjEwIiwidGVuYW50SWQiOm51bGwsImRlcHRDb2RlIjoiMTAwNTA3MDQwMyIsImV4cCI6MTU2MzE2MDQyNSwidXNlcm5hbWUiOiLnjovmtanmtIsifQ.abruOq8Bkdvn_wlx34OD5Ij69Pg3kQkAHVLBvUTmvoI'
