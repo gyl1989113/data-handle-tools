@@ -200,9 +200,9 @@ class MysqlClient(object):
 if __name__ == '__main__':
     mysql_client = MysqlClient()
     connection = mysql_client.client_to_mysql()
-    data1 = {'commenttime': '2019-03-27', 'comment': 'fuck you'}
-    data2 = [{'commenttime': '2019-03-29', 'comment': 'fuck you and me'}, {'commenttime': '2019-03-28', 'comment': 'fuck me'}]
-    data3 = {'commenttime': '2019-03-29', 'comment': 'fuck me and you'}
+    data1 = {'commenttime': '2019-03-27', 'comment': 'abc'}
+    data2 = [{'commenttime': '2019-03-29', 'comment': 'abcde'}, {'commenttime': '2019-03-28', 'comment': 'abc'}]
+    data3 = {'commenttime': '2019-03-29', 'comment': 'abcde'}
     # mysql_client.insert_to_mysql(connection=connection, data=data3)
     # mysql_client.update_to_mysql(connection=connection, data=date3, where_condition="where commenttime='2019-03-29'")
     # mysql_client.duplicate_data_remove(connection=connection, table_name="huoguodian", column="comment", value="fuck you")
